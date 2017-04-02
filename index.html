@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sustitucion2.jpg','imagenes/gama_Baja1.jpg','imagenes/gama_media.jpg','imagenes/gama_alta1.jpg','imagenes/historia.jpg','imagenes/futuro3.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TELEFONÍA CELULAR</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>¿Qué es un telefono celular?</h2>
+ <p>Se muestra la definición sobre el telefono celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonía celular</h2>
+<p>Se muestra una breve historia de la telefonía celular </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de la telefonía celular</h2>
+<p>Muestra la clasificación sobre celulares</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que manejan la telefonía celular en México</h2>
+<p>Muestra las compañias que existen en el país</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Telefonos celulares del futuro</h2>
+ <p>Muestra los telefonos esperados en un futuro</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+ <img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Uno</h4>
+<h4>Viridiana Cortez Diaz</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>¿QUÉ ES UN TELÉFONO CELULAR?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico.</p>
+<p>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</p></h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen Teléfono celular</h1>
+<div>
+<p>Esta es la imagen del celular: </p>
+<br>
+</div>
+<div>
+   <img src="imagenes/celular.jpg" width="50%" height="50%">
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen Teléfono celular</h2>
+<div>
+<p>Esta es la imagen de otro teléfono celular: </p>
+<br>
+</div>
+<div>
+   <img src="imagenes/celular2.jpg" width="61%" height="54%">
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>HISTORIA DE LA TELEFONIA CELULAR</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>Martin Cooper fue el pionero en esta tecnología, a él se le considera como "el padre de la telefonía celular" al introducir el primer radioteléfono, en 1973, en Estados Unidos, mientras trabajaba para Motorola; pero no fue hasta 1979 cuando aparecieron los primeros sistemas comerciales en Tokio, Japón por la compañía NTT. </p>
+
+<p>En 1981, los países nórdicos introdujeron un sistema celular similar a AMPS (Advanced Mobile Phone System). Por otro lado, en Estados Unidos, gracias a que la entidad reguladora de ese país adoptó reglas para la creación de un servicio comercial de telefonía celular, en 1983 se puso en operación el primer sistema comercial en la ciudad de Chicago. </p>
+
+<p>Con ese punto de partida, en varios países se diseminó la telefonía celular como una alternativa a la telefonía convencional inalámbrica. La tecnología tuvo gran aceptación, por lo que a los pocos años de implantarse se empezó a saturar el servicio. En ese sentido, hubo la necesidad de desarrollar e implantar otras formas de acceso múltiple al canal y transformar los sistemas analógicos a digitales, con el objeto de darle cabida a más usuarios. Para separar una etapa de la otra, la telefonía celular se ha caracterizado por contar con diferentes generaciones.</p>
+
+<p>La 1G de la telefonia móvil hizo su aparición en 1979 y se caracterizó por se analógica y estrictamente para voz. La calidad de los enlaces era muy baja, tenían baja velocidad (2400 bauds). En cuanto a la transferencia entre celdas, era muy imprecisa ya que contaban con una baja capacidad.</p>
+</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen Historia Telefonía Celular</h1>
+<div>
+<p>Esta es imagen del celular Motorola: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/historia.jpg',1)"><img src="imagenes/sustitucion.jpg" width="265" height="316" id="Image12"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen Historia teléfono celular</h2>
+<div>
+<p>Esta es la imagen de un celular actual: </p>
+<br>
+</div>
+<div>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('celulares2','','imagenes/sustitucion2.jpg',1)"><img src="imagenes/historia2.jpg" width="498" height="324" id="celulares2"></a></div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CLASIFICACIÓN DE LA TELEFONÍA CELULAR</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>Los celulares se dividen en gamas, las más conocidas se dividen en 3 y son:</p>
+   <p>Gama Alta,Gama Media y Gama Alta</p>
+  <p> Características de la Gama baja:</p>
+   <p>Suelen ser pequeños</p>
+   <p>Tienen funciones básicas o las funciones que traen ya no están a la altura de un    SmartPhone (ej:nokia)</p>
+   <p>Precios muy economicos</p>
+   <p>Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)</p>
+  <p>No reciben soporte ni actualizaciones.</p>
+   <p>La pantalla de estos dispositivos carece de gran resolución y tamaño.</p>
+   <p>La función de realizar llamadas.
+ </p> personalizarlo con wallpapers, ringtones, temas</p>
+  <p>Características de la Gama media:</p>
+      <p>Suelen ser muy equilibrados en sus características</p>
+<p>Generalmente no superan los 500 dólares en precio (como mucho).</p>
+<p>Tienen algunas funciones de la gama alta del momento.</p>
+<p>Los materiales ya son de calidad aceptable.</p>
+<p>Pantallas que no superan las 4.5 pulgadas (en promedio).
+Cámaras de 3 a 5 Mpx.</p>
+<p>Cuentan con cámara frontal.</p>
+<p>Reciben algunas actualizaciones.</p>
+</p>
+   <p>Características de la Gama Alta:</p>
+   <p>Pantallas de 4 pulgadas en adelante.</p>
+<p>Memoria interna desde 16GB.</p>
+<p>Soporte de actualizaciones (las recibe antes pero depende de la marca).</p>
+<p>Diseñados para redes 4G.</p>
+<p>Muchos núcleos, procesadores y RAM para que sean muy rápidos.
+Cámaras de calidad desde 8 Mpx.</p>
+<p>Destacan por ser relativamente delgados.</p>
+<p>Eficiencia energética.</p>
+<p>Se conectan con la TV.</p>
+<p>Desde 800 dólares en adelante.</p>
+<p>Se conectan con Wearables (Galaxy Gear,iWatch, etc)</p>
+<p>Los materiales son de buena calidad.</p>
+</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen clasificación del teléfono celular</h1>
+<div>
+<p>Esta es la de clasificación Gama Baja: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gama_baja','','imagenes/gama_Baja1.jpg',1)"><img src="imagenes/gama_baja.jpg" width="479" height="313" id="gama_baja"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen clasificación del teléfono celular</h2>
+<div>
+<p>Esta es otra imagen de clasificación Gama Media: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gama_media','','imagenes/gama_media.jpg',1)"><img src="imagenes/gama_media1.jpg" width="399" height="249" id="gama_media"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen clasificación del teléfono celular</h2>
+<div>
+<p>Esta es otra imagen de clasificación Gama Alta: </p>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gama_alta','','imagenes/gama_alta1.jpg',1)"><img src="imagenes/gama_alta.jpg" width="513" height="285" id="gama_alta"></a></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>COMPAÑÍAS QUE MANEJA LA TELEFONÍA CELULAR EN MÉXICO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El inicio de la telefonía móvil en México se remonta a 1977, cuando se solicitó a la SCT de México (Secretaría de Comunicaciones y Transportes) una concesión para instalar, operar y explotar un sistema de radiotelefonía móvil en el Distrito Federal.
+<P>EJEMPLOS DE COMPAÑÍAS TELEFÓNICAS EN MÉXICO:</P>
+<p>AXTEL</p>
+<p> Es una empresa mexicana de Tecnologías de la Información y Comunicación,Axtel es creada en febrero de 2016. Uno de sus servicios se divide en Mercado Masivo:Donde brinda servicio de modalidad de líneas fijas.</p>
+<P>MOVISTAR</P>
+<p>es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.Movistar es la segunda compañía en México por número de usuarios y cobertura* y, la tercera en ingresos, después de AT&T</p>
+<P>TELCEL</P>
+<p>iene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios.Telcel fue la primera compañía en México en usar la tecnología GSM. Actualmente Telcel es quien tiene la mayor cobertura a nivel nacional.</p>
+<P>IUSACELL</P>
+</p>Es una empresa mexicana de telecomunicaciones.
+Unefon es una compañía mexicana de telefonía móvil, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago; la marca fue adquirida en conjunto con Iusacell en noviembre de 2014, tras el acuerdo alcanzado entre AT&T 
+<P>NEXTEL</P>
+<p>Nextel permitía la conexión sin costo a la red móvil de Movistar en el caso de no existir red propia de la marca, además de la utilización de las redes 2G o 3G según disponibilidad.</p>
+<P>UNEFON</P>
+<p>es una compañía mexicana de telefonía móvil propiedad de AT&T.</p>
+</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen compañías en México</h1>
+<div>
+<p>Esta es la imagen de algunas compañias que existen en México:  </p>
+<br>
+</div>
+<div>
+   <img src="imagenes/companias.png" width="66%" height="49%">
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen compañias del telefono celular</h2>
+<div>
+<p>Esta es otra imagen de  clasificacion sobre compañias en México: </p>
+<br>
+</div>
+<div>
+   <img src="imagenes/companias2.jpg" width="66%" height="49%">
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TELÉFONOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Hay teléfonos que son esperados por el usuario, ya que cada uno de estos tendrá caracteristicas especiales. Por ejemplo:
+  <P>BLACKBERRY:</P>
+<P> Uno de ellos es el blackberry que contiene tecnología que realiza proyecciones en la superficie donde se encuentra.</P>
+<P>POLYTRON TECHNOLOGIES:</P>
+<p>Este es un telefono transparente.</p>
+<p>MICROSOFT:</p>
+<p>Otro de ellos es el de microsoft que tiene como caracteristica interacciones virtuales en una pequeña pantalla transparente.</p>
+<p>MOZILLA SEABIRD:</p>
+<p> Este celular contiene un puerto USB, Aricular de mando para manejar el telefono, se carga sin cables solo dejandolo sobre su base, proyecta un teclado y una pantalla.</p>
+<P> NOKIA FORMA HUMANA:</P>
+<p>Este posee una pantalla flexible, transparente y tactil. Por lo tanto este tiene un control flexible.
+</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen NOKIA FORMA HUMANA</h1>
+<div>
+<p>Esta es la imagen de un celular del futuro flexible: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('futuro','','imagenes/futuro4.jpg',0)"><img src="imagenes/futuro.jpg" width="424" height="323" id="futuro"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Imagen POLYTRON TECHNOLOGIES</h2>
+<div>
+<p>Esta es otra imagen de un telefono del futuro que es 
+transparente: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('futuro2','','imagenes/futuro3.jpg',1)"><img src="imagenes/futuro2.jpg" width="516" height="340" id="futuro2"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,VCD</h4>
+</div>
+</div>
+
+</body>
+</html>
